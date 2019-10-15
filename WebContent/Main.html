@@ -7,24 +7,22 @@
 	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>세모 - 상가 매물 중개 사이트</title>
 
-<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="css/form.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 
 </head>
 <body>
-	
-	
-<!-- Menu bar -->
+
+	<!-- Menu bar -->
 	<div class="row menu">
 		<nav class="navbar navbar-expand-sm bg-white">
 			<div class="col-md-1">
-				<a	class="nav-link" href="index.html">
-					<img src="img/main_logo.jpg" width="80px" height="50px"/>
+				<a class="nav-link" href="index.html"> <img
+					src="img/main_logo.jpg" width="80px" height="50px" />
 				</a>
 			</div>
 			<div class="col-md-9">
-				<ul class="nav">				
+				<ul class="nav">
 					<li class="nav-item"><a class="nav-link" href="#">상가</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">상권분석</a></li>
 				</ul>
@@ -32,7 +30,7 @@
 			<div class="col-md-2">
 				<ul class="nav right">
 					<li><a class="nav-link" data-toggle="modal" href="#myModal">로그인</a></li>
-					<li><a class="nav-link" href="#">회원가입</a></li>
+					<li><a class="nav-link" href="Joinus_select.html">회원가입</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -46,15 +44,12 @@
 			<option value="">거래유형</option>
 			<option value="monthlyRent">월세</option>
 			<option value="trade">매매</option>
-		</select>
-		<select class="form-control" name="selectPrice">
-			<option value="">가격</option>			
-		</select>
-		<select class="form-control" name="selectPrice">
-			<option value="">전용면적</option>			
-		</select>
-		<select class="form-control" name="selectPrice">
-			<option value="">상세검색</option>			
+		</select> <select class="form-control" name="selectPrice">
+			<option value="">가격</option>
+		</select> <select class="form-control" name="selectPrice">
+			<option value="">전용면적</option>
+		</select> <select class="form-control" name="selectPrice">
+			<option value="">상세검색</option>
 		</select>
 	</div>
 
@@ -63,20 +58,20 @@
 
 	<div class="row content">
 		<!-- kakao map api 적용 div -->
-		<div id="map" class="col-md-8 map"></div>
+		<div id="map" class="col-md-9 map"></div>
 		<!-- 매물 리스트 출력 부분 -->
-		<div class="col-md-4 list">
-			<div class="listheader" style="border-bottom:1px solid red;">매물 리스트</div>
+		<div class="col-md-3 list">
+			<div class="listheader" style="border-bottom: 1px solid red;">매물
+				리스트</div>
 			<div class="listcount">
-				<span>검색결과</span>
-				<span class="maemulCount" style="color:red;"></span>
-				<span>개</span> 
+				<span>검색결과</span> <span class="maemulCount" style="color: red;"></span>
+				<span>개</span>
 			</div>
 			<div class="listcontent">
-			<!-- pagenation 구현 -->
+				<!-- pagenation 구현 -->
 			</div>
 			<div class="pageCount">
-				<ul class="pagination" >
+				<ul class="pagination">
 					<li class="page-item"><a class="page-link" href="#">Previous</a></li>
 					<li class="page-item"><a class="page-link" href="#">1</a></li>
 					<li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -88,44 +83,45 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 	<!-- 로그인 Modal -->
 	<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-      	<div class="modal-header">
-      		<h3>로그인</h3>
-	        <button type="button" class="close" data-dismiss="modal">×</button>
-      	</div>
-        <div class="modal-body">
-        	<input type="text" class="form-control idpw" placeholder="아이디">
-			<input type="password" class="form-control idpw" placeholder="패스워드">
-			<input type="checkbox" id="autologin" class="autologin" name="autologin">
-			<label for="autologin">자동로그인</label>
-	  		<span>
-	  			<a id="findpw" href="#">비밀번호찾기</a>
-	  		</span>
-	  		<button class="btn btn-primary emailLogin">이메일 로그인</button>
-	  		<span class="adduserMent">아직 세모의 회원이 아니신가요? <a href="#">회원가입</a></span>
-        </div>
-      </div>  
- 	</div>	
-  	</div>
-	
-	
-	
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>로그인</h3>
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+				<div class="modal-body">
+					<input type="text" class="form-control idpw" placeholder="아이디">
+					<input type="password" class="form-control idpw" placeholder="패스워드">
+					<input type="checkbox" id="autologin" class="autologin"
+						name="autologin"> <label for="autologin">자동로그인</label> <span>
+						<a id="findpw" href="#">비밀번호찾기</a>
+					</span>
+					<button class="btn btn-primary emailLogin">이메일 로그인</button>
+					<span class="adduserMent">아직 세모의 회원이 아니신가요? <a
+						href="Joinus_select.html">회원가입</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=98a9ba7245ae5c0929fafa188dbfaf9a&libraries=libraries=services,clusterer,drawing"></script>
 	<script>
-	    //매물개수
+		//매물개수
 		var maemulCount = 0;
 		$(".maemulCount").html(maemulCount);
-	
+
 		//KAKAO api javascript 
 		var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 		var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -136,7 +132,6 @@
 
 		var map = new kakao.maps.Map(container, options);
 		//KAKAO API javaxcript END
-		
 	</script>
 
 </body>

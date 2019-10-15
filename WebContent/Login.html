@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>세모 - 상가 매물 중개 사이트</title>
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/Login.css" />
+
+
+</head>
+<body>
+
+	<!-- Menu bar -->
+	<div class="row menu">
+		<nav class="navbar navbar-expand-sm bg-white">
+			<div class="col-md-1">
+				<a class="nav-link" href="Main.html"> <img
+					src="img/main_logo.jpg" width="80px" height="50px" />
+				</a>
+			</div>
+			<div class="col-md-9">
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="#">상가</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">상권분석</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav right">
+					<li><a class="nav-link" data-toggle="modal" href="#myModal">로그인</a></li>
+					<li><a class="nav-link" href="Joinus_select.html">회원가입</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- Menu bar end -->
+
+	<!-- 로그인 Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>로그인</h3>
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+				<div class="modal-body">
+					<input type="text" class="form-control idpw" placeholder="아이디">
+					<input type="password" class="form-control idpw" placeholder="패스워드">
+					<input type="checkbox" id="autologin" class="autologin"
+						name="autologin"> <label for="autologin">자동로그인</label> <span>
+						<a id="findpw" href="#">비밀번호찾기</a>
+					</span>
+					<button class="btn btn-primary emailLogin">이메일 로그인</button>
+					<span class="adduserMent">아직 세모의 회원이 아니신가요? <a
+						href="Joinus_select.html">회원가입</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 작업할 부분 -->
+	<div class="content">
+		<h2>로그인</h2>
+		<p>세모에 오신것을 환영합니다</p>
+		<div class="container contentBox">
+			<div class="container loginDiv">
+				<form id="loginform" action="#" method="post">
+					<div class="form-group">
+						<input type="Email" id="email" name="email" class="form-control" 
+							placeholder="이메일">
+					</div>
+					<div class="form-group">
+						<input type="password" id="password" name="password"
+							class="form-control" placeholder="비밀번호">
+					</div>
+					<div class="form-group">
+						<label class="checkbox-inline"> <input type="checkbox"
+							id="inlineCheckbox1" value="option1">&nbsp;자동로그인
+						</label>
+						<span><a class="adduser" href="Joinus_select.html">회원가입</a></span>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary EmailLogin" type="submit">이메일
+							로그인</button>
+					</div>
+				</form>
+				<div class="adduser_btn">
+					<button type="button" class="btn btn-outline-primary">일반
+						회원가입</button>
+					<button type="button" class="btn btn-outline-primary">중개사
+						회원가입</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
